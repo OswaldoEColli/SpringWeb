@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div class="container">
+    <h1>Bienvenido</h1>
+    <div class="welcome-message">
+        <h2>Hola, <span th:text="${username}"></span>!</h2>
+        <p>Has iniciado sesión correctamente.</p>
+    </div>
+
+    <div class="actions">
+        <a th:href="@{/inicio}" class="button">Cerrar Sesión</a>
+    </div>
+</div>
+</body>
+</html>
